@@ -113,22 +113,39 @@
   }
 
   .parchment {
-    background: #f4e4bc;
-    background-image:
+    background:
       radial-gradient(
-        circle at 20% 50%,
-        rgba(160, 82, 45, 0.05) 0%,
-        transparent 50%
+        circle at 15% 25%,
+        rgba(101, 67, 33, 0.4) 0%,
+        transparent 15%
       ),
       radial-gradient(
-        circle at 80% 20%,
-        rgba(160, 82, 45, 0.05) 0%,
-        transparent 50%
+        circle at 85% 15%,
+        rgba(139, 69, 19, 0.3) 0%,
+        transparent 20%
       ),
       radial-gradient(
-        circle at 40% 80%,
-        rgba(160, 82, 45, 0.05) 0%,
-        transparent 50%
+        circle at 25% 75%,
+        rgba(160, 82, 45, 0.25) 0%,
+        transparent 18%
+      ),
+      radial-gradient(
+        circle at 75% 80%,
+        rgba(101, 67, 33, 0.35) 0%,
+        transparent 22%
+      ),
+      radial-gradient(
+        circle at 50% 40%,
+        rgba(139, 69, 19, 0.2) 0%,
+        transparent 25%
+      ),
+      linear-gradient(
+        135deg,
+        #d4c4a0 0%,
+        #e6d7b8 20%,
+        #c8b896 45%,
+        #dcc8a5 70%,
+        #c2ad88 100%
       );
     border: none;
     position: relative;
@@ -157,8 +174,9 @@
       1% 4%
     );
     box-shadow:
-      inset 0 0 30px rgba(139, 69, 19, 0.2),
-      0 10px 30px rgba(0, 0, 0, 0.3);
+      inset 0 0 40px rgba(139, 69, 19, 0.4),
+      inset 0 0 80px rgba(101, 67, 33, 0.2),
+      0 15px 40px rgba(0, 0, 0, 0.4);
   }
 
   .parchment::before {
@@ -204,5 +222,60 @@
   .parchment-text {
     color: #4a2c17;
     text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
+  }
+
+  .wax-seal {
+    width: 60px;
+    height: 60px;
+    background: radial-gradient(circle, #8b0000 30%, #660000 70%);
+    border-radius: 50%;
+    position: absolute;
+    box-shadow:
+      inset 0 0 10px rgba(0, 0, 0, 0.5),
+      0 2px 8px rgba(0, 0, 0, 0.6);
+  }
+
+  .wax-seal::before {
+    content: "⚔️";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+  }
+
+  .wax-seal-1 {
+    top: 20px;
+    right: 40px;
+  }
+
+  .wax-seal-2 {
+    bottom: 30px;
+    left: 30px;
+  }
+
+  .ancient-symbol {
+    position: absolute;
+    font-size: 20px;
+    opacity: 0.3;
+    color: #8b4513;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  .symbol-1 {
+    top: 60px;
+    left: 20px;
+  }
+
+  .symbol-2 {
+    top: 50%;
+    right: 20px;
+  }
+
+  .symbol-3 {
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

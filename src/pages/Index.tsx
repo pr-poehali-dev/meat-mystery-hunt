@@ -104,7 +104,15 @@ export default function Index() {
       {/* Story Section */}
       <div id="story" className="container mx-auto px-4 py-16">
         <div className="max-w-5xl mx-auto">
-          <div className="parchment p-8 mx-auto animate-fade-in">
+          <div className="parchment p-8 mx-auto animate-fade-in relative">
+            {/* Восковые печати */}
+            <div className="wax-seal wax-seal-1"></div>
+            <div className="wax-seal wax-seal-2"></div>
+            
+            {/* Древние символы */}
+            <div className="ancient-symbol symbol-1">☩</div>
+            <div className="ancient-symbol symbol-2">⚜</div>
+            <div className="ancient-symbol symbol-3">🗡</div>
           
             <div className="space-y-8 parchment-text">
               <div className="text-center mb-8">
@@ -152,14 +160,12 @@ export default function Index() {
                 <p className="text-lg leading-relaxed mb-4 text-center">
                   Трагедия, перед которой меркнут угрозы вторжения светлых.
                 </p>
-                <div className="bg-red-900/20 rounded p-6 border-2 border-red-800">
-                  <h4 className="fantasy-header text-xl text-red-800 mb-3 text-center">Из шашлычной пропало мясо. ВСЁ МЯСО!</h4>
-                  <ul className="space-y-2 text-lg text-red-900">
-                    <li className="text-center">❌ Отборная вырезка с тролля-марафонца</li>
-                    <li className="text-center">❌ Нежные антрекоты василиска</li>
-                    <li className="text-center font-bold">❌ Последний окорок эфирного кабана</li>
-                  </ul>
-                </div>
+                <h4 className="fantasy-header text-xl text-red-800 mb-3 text-center">Из шашлычной пропало мясо. ВСЁ МЯСО!</h4>
+                <ul className="space-y-2 text-lg text-red-900 text-center">
+                  <li>❌ Отборная вырезка с тролля-марафонца</li>
+                  <li>❌ Нежные антрекоты василиска</li>
+                  <li className="font-bold">❌ Последний окорок эфирного кабана</li>
+                </ul>
               </div>
 
               <div className="border-t border-fantasy-brown/30 pt-6">
