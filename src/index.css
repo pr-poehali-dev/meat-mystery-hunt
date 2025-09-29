@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Uncial+Antiqua&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=MedievalSharp&family=Pirata+One&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -99,7 +99,7 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: "Uncial Antiqua", serif;
+    font-family: "MedievalSharp", serif;
   }
 
   .fantasy-title {
@@ -113,32 +113,91 @@
   }
 
   .parchment {
-    background: linear-gradient(
-      45deg,
-      #f4e4bc 0%,
-      #f9f2e7 25%,
-      #f4e4bc 50%,
-      #f9f2e7 75%,
-      #f4e4bc 100%
-    );
-    background-size: 40px 40px;
-    border: 3px solid #8b4513;
-    border-radius: 8px;
-    box-shadow:
-      inset 0 0 20px rgba(139, 69, 19, 0.3),
-      0 0 20px rgba(0, 0, 0, 0.5);
+    background: #f4e4bc;
+    background-image:
+      radial-gradient(
+        circle at 20% 50%,
+        rgba(160, 82, 45, 0.05) 0%,
+        transparent 50%
+      ),
+      radial-gradient(
+        circle at 80% 20%,
+        rgba(160, 82, 45, 0.05) 0%,
+        transparent 50%
+      ),
+      radial-gradient(
+        circle at 40% 80%,
+        rgba(160, 82, 45, 0.05) 0%,
+        transparent 50%
+      );
+    border: none;
     position: relative;
+    clip-path: polygon(
+      2% 0%,
+      98% 1%,
+      99% 4%,
+      100% 15%,
+      98% 25%,
+      100% 35%,
+      99% 50%,
+      100% 65%,
+      98% 75%,
+      100% 85%,
+      99% 96%,
+      98% 100%,
+      2% 99%,
+      1% 96%,
+      0% 85%,
+      2% 75%,
+      0% 65%,
+      1% 50%,
+      0% 35%,
+      2% 25%,
+      0% 15%,
+      1% 4%
+    );
+    box-shadow:
+      inset 0 0 30px rgba(139, 69, 19, 0.2),
+      0 10px 30px rgba(0, 0, 0, 0.3);
   }
 
   .parchment::before {
     content: "";
     position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    background: linear-gradient(45deg, #8b4513, #d2691e, #8b4513);
-    border-radius: 10px;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: linear-gradient(
+      45deg,
+      rgba(139, 69, 19, 0.3),
+      rgba(210, 105, 30, 0.2),
+      rgba(139, 69, 19, 0.3)
+    );
+    clip-path: polygon(
+      2% 0%,
+      98% 1%,
+      99% 4%,
+      100% 15%,
+      98% 25%,
+      100% 35%,
+      99% 50%,
+      100% 65%,
+      98% 75%,
+      100% 85%,
+      99% 96%,
+      98% 100%,
+      2% 99%,
+      1% 96%,
+      0% 85%,
+      2% 75%,
+      0% 65%,
+      1% 50%,
+      0% 35%,
+      2% 25%,
+      0% 15%,
+      1% 4%
+    );
     z-index: -1;
   }
 

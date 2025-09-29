@@ -164,13 +164,7 @@ export default function Index() {
 
               <div className="border-t border-fantasy-brown/30 pt-6">
                 <h3 className="fantasy-header text-2xl text-fantasy-brown mb-4 text-center">Речь Торквина</h3>
-                <div className="flex justify-center mb-4">
-                  <img 
-                    src="/img/83ab6b78-db1c-49d3-b262-6d355eb63f68.jpg" 
-                    alt="Торквин"
-                    className="w-24 h-24 rounded-full object-cover border-3 border-fantasy-brown"
-                  />
-                </div>
+
                 <div className="bg-fantasy-brown/10 rounded p-6 border-l-4 border-fantasy-brown">
                   <p className="text-lg leading-relaxed mb-4 italic text-center">
                     «ЭТОГО не может быть! — его голос дрожал от неподдельного ужаса. — У Джинна пусто! 
