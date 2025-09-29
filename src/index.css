@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Uncial+Antiqua&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -99,7 +99,7 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Uncial Antiqua", serif;
   }
 
   .fantasy-title {
@@ -110,5 +110,40 @@
   .fantasy-header {
     font-family: "Cinzel", serif;
     font-weight: 500;
+  }
+
+  .parchment {
+    background: linear-gradient(
+      45deg,
+      #f4e4bc 0%,
+      #f9f2e7 25%,
+      #f4e4bc 50%,
+      #f9f2e7 75%,
+      #f4e4bc 100%
+    );
+    background-size: 40px 40px;
+    border: 3px solid #8b4513;
+    border-radius: 8px;
+    box-shadow:
+      inset 0 0 20px rgba(139, 69, 19, 0.3),
+      0 0 20px rgba(0, 0, 0, 0.5);
+    position: relative;
+  }
+
+  .parchment::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #8b4513, #d2691e, #8b4513);
+    border-radius: 10px;
+    z-index: -1;
+  }
+
+  .parchment-text {
+    color: #4a2c17;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
   }
 }

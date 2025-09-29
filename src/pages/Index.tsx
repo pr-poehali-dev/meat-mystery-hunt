@@ -103,143 +103,93 @@ export default function Index() {
 
       {/* Story Section */}
       <div id="story" className="container mx-auto px-4 py-16">
-        <div className="max-w-4xl mx-auto space-y-8">
+        <div className="max-w-5xl mx-auto">
+          <div className="parchment p-8 mx-auto animate-fade-in">
           
-          {/* Prologue */}
-          <Card className="bg-card/90 backdrop-blur border-fantasy-gold/30 animate-fade-in">
-            <CardContent className="p-8">
-              <div className="flex items-start gap-6">
-                <div className="w-16 h-16 bg-fantasy-gold rounded-full flex items-center justify-center flex-shrink-0">
-                  <Icon name="Crown" className="text-fantasy-dark-brown" size={28} />
+            <div className="space-y-8 parchment-text">
+              <div className="text-center mb-8">
+                <h2 className="fantasy-title text-4xl text-fantasy-brown mb-2">Полгода Спустя</h2>
+                <div className="w-32 h-1 bg-fantasy-brown mx-auto opacity-60"></div>
+              </div>
+              
+              <p className="text-lg leading-relaxed first-letter:text-6xl first-letter:font-bold first-letter:mr-2 first-letter:float-left first-letter:leading-none">
+                Полгода. Именно столько прошло с тех пор, как по воле Темного Владыки Ивана IV Хаотического 
+                между холмом Калькуары и извилистой рекой начал расти <strong>Иванград</strong>. 
+                Город, где ровные улицы уже есть, а канализация — пока нет. Где пахнет надеждой, свежей щепой 
+                и слегка подгоревшим троллем.
+              </p>
+
+              <div className="border-t border-fantasy-brown/30 pt-6">
+                <h3 className="fantasy-header text-2xl text-fantasy-brown mb-4 text-center">Агенты Торквина</h3>
+                <p className="text-lg leading-relaxed mb-4">
+                  Вы — не герои и не последняя надежда. Вы — несчастные сотрудники (или «активные активы», 
+                  как модно называть) тайной службы Торквина. Ваш босс, как и вы, недавно сбежал из захваченного 
+                  светлыми Кемнаро и теперь с упорством, достойным лучшего применения, пытается перенести сюда 
+                  агентурную сеть.
+                </p>
+                <div className="bg-fantasy-brown/10 rounded p-4 border-l-4 border-fantasy-brown italic text-fantasy-brown/80">
+                  Пока что главные враги государства — это хроническое отсутствие кофе и криво подключенный 
+                  магический факс, который вместо донесений печатает смущающие портреты Владыки.
                 </div>
-                <div>
-                  <h2 className="fantasy-header text-2xl text-fantasy-gold mb-4">Полгода Спустя</h2>
-                  <p className="text-lg leading-relaxed">
-                    Полгода. Именно столько прошло с тех пор, как по воле Темного Владыки Ивана IV Хаотического 
-                    между холмом Калькуары и извилистой рекой начал расти <strong className="text-fantasy-gold">Иванград</strong>. 
-                    Город, где ровные улицы уже есть, а канализация — пока нет. Где пахнет надеждой, свежей щепой 
-                    и слегка подгоревшим троллем.
+              </div>
+
+              <div className="border-t border-fantasy-brown/30 pt-6">
+                <h3 className="fantasy-header text-2xl text-fantasy-brown mb-4 text-center">Шашлычная «У Джинна»</h3>
+                <p className="text-lg leading-relaxed mb-4">
+                  Последние недели вы пытались освоиться. И даже добились некоторого успеха: нашли единственную 
+                  шашлычную <strong>«У Джинна»</strong>, где подают шашлык такой силы, 
+                  что после него хочется прощать врагов, ибо враги уже не важны.
+                </p>
+                <div className="bg-fantasy-brown/20 rounded p-4 border border-fantasy-brown/40 text-center">
+                  <p className="font-medium italic">
+                    Важны только этот божественный вкус и чтобы никто не трогал.
                   </p>
                 </div>
               </div>
-            </CardContent>
-          </Card>
 
-          {/* Agents Section */}
-          <Card className="bg-card/90 backdrop-blur border-fantasy-gold/30 animate-fade-in">
-            <CardContent className="p-8">
-              <div className="flex items-start gap-6">
-                <div className="w-16 h-16 bg-fantasy-gold rounded-full flex items-center justify-center flex-shrink-0">
-                  <Icon name="Users" className="text-fantasy-dark-brown" size={28} />
+              <div className="border-t border-red-800/50 pt-6">
+                <h3 className="fantasy-header text-3xl text-red-800 mb-4 text-center">НЕМЫСЛИМОЕ ПРОИЗОШЛО</h3>
+                <p className="text-lg leading-relaxed mb-4 text-center">
+                  Трагедия, перед которой меркнут угрозы вторжения светлых.
+                </p>
+                <div className="bg-red-900/20 rounded p-6 border-2 border-red-800">
+                  <h4 className="fantasy-header text-xl text-red-800 mb-3 text-center">Из шашлычной пропало мясо. ВСЁ МЯСО!</h4>
+                  <ul className="space-y-2 text-lg text-red-900">
+                    <li className="text-center">❌ Отборная вырезка с тролля-марафонца</li>
+                    <li className="text-center">❌ Нежные антрекоты василиска</li>
+                    <li className="text-center font-bold">❌ Последний окорок эфирного кабана</li>
+                  </ul>
                 </div>
-                <div>
-                  <h2 className="fantasy-header text-2xl text-fantasy-gold mb-4">Агенты Торквина</h2>
-                  <p className="text-lg leading-relaxed mb-4">
-                    Вы — не герои и не последняя надежда. Вы — несчастные сотрудники (или «активные активы», 
-                    как модно называть) тайной службы Торквина. Ваш босс, как и вы, недавно сбежал из захваченного 
-                    светлыми Кемнаро и теперь с упорством, достойным лучшего применения, пытается перенести сюда 
-                    агентурную сеть.
+              </div>
+
+              <div className="border-t border-fantasy-brown/30 pt-6">
+                <h3 className="fantasy-header text-2xl text-fantasy-brown mb-4 text-center">Речь Торквина</h3>
+                <div className="flex justify-center mb-4">
+                  <img 
+                    src="/img/83ab6b78-db1c-49d3-b262-6d355eb63f68.jpg" 
+                    alt="Торквин"
+                    className="w-24 h-24 rounded-full object-cover border-3 border-fantasy-brown"
+                  />
+                </div>
+                <div className="bg-fantasy-brown/10 rounded p-6 border-l-4 border-fantasy-brown">
+                  <p className="text-lg leading-relaxed mb-4 italic text-center">
+                    «ЭТОГО не может быть! — его голос дрожал от неподдельного ужаса. — У Джинна пусто! 
+                    Холодильники сиротливо пустуют! На кухне царит атмосфера, сравнимая с концом света! 
+                    Без этого шашлыка я... мы... все мы не сможем думать! Работать! Жить!»
                   </p>
-                  <div className="bg-muted/50 rounded-lg p-4 border-l-4 border-fantasy-gold">
-                    <p className="text-muted-foreground italic">
-                      Пока что главные враги государства — это хроническое отсутствие кофе и криво подключенный 
-                      магический факс, который вместо донесений печатает смущающие портреты Владыки.
+                  <p className="text-lg leading-relaxed mb-4 text-center">
+                    Он тяжко вздохнул, глядя на вас, как на свою последнюю, крайне ненадежную соломинку.
+                  </p>
+                  <div className="bg-fantasy-brown/20 rounded p-4 border border-fantasy-brown/40">
+                    <p className="text-lg leading-relaxed font-medium text-center">
+                      «Найдите это мясо. Верните его. Не ради славы, не ради Владыки... а ради всех нас. 
+                      Ради того, чтобы в этом юном городе оставался хоть один лучик гастрономического счастья!»
                     </p>
                   </div>
                 </div>
               </div>
-            </CardContent>
-          </Card>
-
-          {/* Tavern Section */}
-          <Card className="bg-card/90 backdrop-blur border-fantasy-gold/30 animate-fade-in">
-            <CardContent className="p-8">
-              <div className="flex items-start gap-6">
-                <div className="w-16 h-16 bg-fantasy-gold rounded-full flex items-center justify-center flex-shrink-0">
-                  <Icon name="Utensils" className="text-fantasy-dark-brown" size={28} />
-                </div>
-                <div>
-                  <h2 className="fantasy-header text-2xl text-fantasy-gold mb-4">Шашлычная «У Джинна»</h2>
-                  <p className="text-lg leading-relaxed mb-4">
-                    Последние недели вы пытались освоиться. И даже добились некоторого успеха: нашли единственную 
-                    шашлычную <strong className="text-fantasy-gold">«У Джинна»</strong>, где подают шашлык такой силы, 
-                    что после него хочется прощать врагов, ибо враги уже не важны.
-                  </p>
-                  <div className="bg-fantasy-gold/10 rounded-lg p-4 border border-fantasy-gold/30">
-                    <p className="text-fantasy-gold font-medium">
-                      Важны только этот божественный вкус и чтобы никто не трогал.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-
-          {/* Crisis Section */}
-          <Card className="bg-destructive/10 backdrop-blur border-destructive/30 animate-fade-in">
-            <CardContent className="p-8">
-              <div className="flex items-start gap-6">
-                <div className="w-16 h-16 bg-destructive rounded-full flex items-center justify-center flex-shrink-0">
-                  <Icon name="AlertTriangle" className="text-white" size={28} />
-                </div>
-                <div>
-                  <h2 className="fantasy-header text-2xl text-destructive mb-4">НЕМЫСЛИМОЕ ПРОИЗОШЛО</h2>
-                  <p className="text-lg leading-relaxed mb-4">
-                    Трагедия, перед которой меркнут угрозы вторжения светлых.
-                  </p>
-                  <div className="bg-destructive/20 rounded-lg p-6 border-2 border-destructive">
-                    <h3 className="fantasy-header text-xl text-destructive mb-3">Из шашлычной пропало мясо. ВСЁ МЯСО!</h3>
-                    <ul className="space-y-2 text-lg">
-                      <li className="flex items-center gap-2">
-                        <Icon name="X" className="text-destructive flex-shrink-0" size={16} />
-                        <span>Отборная вырезка с тролля-марафонца</span>
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <Icon name="X" className="text-destructive flex-shrink-0" size={16} />
-                        <span>Нежные антрекоты василиска</span>
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <Icon name="X" className="text-destructive flex-shrink-0" size={16} />
-                        <span className="font-bold">Последний окорок эфирного кабана</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-
-          {/* Torquin's Speech */}
-          <Card className="bg-card/90 backdrop-blur border-fantasy-gold/30 animate-fade-in">
-            <CardContent className="p-8">
-              <div className="flex items-start gap-6">
-                <img 
-                  src="/img/83ab6b78-db1c-49d3-b262-6d355eb63f68.jpg" 
-                  alt="Торквин"
-                  className="w-20 h-20 rounded-full object-cover border-2 border-fantasy-gold flex-shrink-0"
-                />
-                <div className="flex-1">
-                  <h2 className="fantasy-header text-2xl text-fantasy-gold mb-4">Речь Торквина</h2>
-                  <div className="bg-muted/50 rounded-lg p-6 border-l-4 border-fantasy-gold">
-                    <p className="text-lg leading-relaxed mb-4 italic">
-                      «ЭТОГО не может быть! — его голос дрожал от неподдельного ужаса. — У Джинна пусто! 
-                      Холодильники сиротливо пустуют! На кухне царит атмосфера, сравнимая с концом света! 
-                      Без этого шашлыка я... мы... все мы не сможем думать! Работать! Жить!»
-                    </p>
-                    <p className="text-lg leading-relaxed mb-4">
-                      Он тяжко вздохнул, глядя на вас, как на свою последнюю, крайне ненадежную соломинку.
-                    </p>
-                    <div className="bg-fantasy-gold/10 rounded-lg p-4 border border-fantasy-gold/30">
-                      <p className="text-lg leading-relaxed text-fantasy-gold font-medium">
-                        «Найдите это мясо. Верните его. Не ради славы, не ради Владыки... а ради всех нас. 
-                        Ради того, чтобы в этом юном городе оставался хоть один лучик гастрономического счастья!»
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+            </div>
+          </div>
 
           {/* Mission Section */}
           <Card id="mission" className="bg-fantasy-gold/10 backdrop-blur border-fantasy-gold animate-fade-in">
